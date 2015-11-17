@@ -22,5 +22,5 @@ if (isset($hSimply->exceptionMsg) && !empty($hSimply->exceptionMsg)) {
 }
 
 // Return minified URL
-echo json_encode(array('success' => true, 'littleUrl' => 'http://ly.tracksy.co.uk/?'.$hSimply->littleUrl));
+echo json_encode(array('success' => true, 'littleUrl' => 'http://ly.tracksy.co.uk/?' . $hSimply->littleUrl));
 exit;
